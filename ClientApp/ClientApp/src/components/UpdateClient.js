@@ -28,8 +28,6 @@ function UpdateClient() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        
-
         Axios.put('https://localhost:7283/Client', values).then(res => {
             navigate('/');
         }).catch(function (error) {
